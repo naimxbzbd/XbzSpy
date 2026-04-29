@@ -1,0 +1,7 @@
+python-telegram-bot==20.7
+phonenumbers==8.13.39
+requests==2.31.0
+python-dotenv==1.0.0
+qrcode[pil]==7.4.2
+Pillow==10.2.0
+aiofiles==23.2.1
