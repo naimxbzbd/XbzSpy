@@ -1,0 +1,15 @@
+services:
+  - type: worker
+    name: XbzSpy
+    env: python
+    region: singapore
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python xbzspy_bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: 7335644501:AAEbmo1GUuxqg78H-hh4Y2Oq3CWXWJHqZUI
+      - key: MAX_SEARCHES_PER_DAY
+        value: "30"
+      - key: NUMLOOKUP_API_KEY
+        value: num_live_XgezJxMfDKXRVWePIZhm27tpzgQr5ihnkYp0XcWQ
